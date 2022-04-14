@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-14T16:14:04.157Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="D3SqpKc_aHwF6QsB_3OH" version="17.2.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-04-14T16:29:55.903Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="mOSHUa7eOClMY7dOFe5S" version="17.2.1" type="github" pages="4">
   <diagram id="pI4BBdqeLr5deer7_EpU" name="整体架构-流程">
     <mxGraphModel dx="946" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -331,33 +331,18 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="n3twsitCoD2v3ThDSTjB-32" value="git clone" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="135" y="240" width="50" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="n3twsitCoD2v3ThDSTjB-34" value="" style="endArrow=classic;html=1;rounded=0;startSize=6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n3twsitCoD2v3ThDSTjB-32" target="n3twsitCoD2v3ThDSTjB-35">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="300" y="420" as="sourcePoint" />
-            <mxPoint x="210" y="340" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="220" y="255" />
-              <mxPoint x="220" y="315" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="n3twsitCoD2v3ThDSTjB-36" value="调用内部 git init" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="n3twsitCoD2v3ThDSTjB-34">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+          <mxGeometry x="135" y="257" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="n3twsitCoD2v3ThDSTjB-35" value=".git文件" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="135" y="300" width="50" height="30" as="geometry" />
+          <mxGeometry x="135" y="384" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="n3twsitCoD2v3ThDSTjB-37" value="&lt;h1&gt;第1步&lt;/h1&gt;&lt;p&gt;初始化当前目录.git文件夹，并将远程仓库地址写入config文件中&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
-          <mxGeometry x="-100" y="240" width="190" height="90" as="geometry" />
+        <mxCell id="n3twsitCoD2v3ThDSTjB-37" value="&lt;h1&gt;第2步&lt;/h1&gt;&lt;p&gt;初始化当前目录.git文件夹，并将远程仓库地址写入config文件中&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="338" width="190" height="90" as="geometry" />
         </mxCell>
         <mxCell id="n3twsitCoD2v3ThDSTjB-38" value="" style="endArrow=classic;html=1;rounded=0;startSize=6;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="162" y="370" as="sourcePoint" />
-            <mxPoint x="612" y="370" as="targetPoint" />
+            <mxPoint x="186" y="270" as="sourcePoint" />
+            <mxPoint x="608" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="n3twsitCoD2v3ThDSTjB-39" value="info/refs请求" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="n3twsitCoD2v3ThDSTjB-38">
@@ -366,12 +351,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="n3twsitCoD2v3ThDSTjB-40" value="info/refs?service=git-upload-pack&lt;br&gt;返回服务器的版本，fetch方式以及object采用的hash算法等信息" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;labelBackgroundColor=none;strokeColor=#d6b656;base=20;fillColor=#fff2cc;" vertex="1" parent="1">
-          <mxGeometry x="290" y="270" width="210" height="90" as="geometry" />
+          <mxGeometry x="290" y="170" width="210" height="90" as="geometry" />
         </mxCell>
         <mxCell id="n3twsitCoD2v3ThDSTjB-41" value="" style="endArrow=classic;html=1;rounded=0;startSize=6;dashed=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="610" y="407" as="sourcePoint" />
-            <mxPoint x="160" y="407" as="targetPoint" />
+            <mxPoint x="610" y="307" as="sourcePoint" />
+            <mxPoint x="160" y="307" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="n3twsitCoD2v3ThDSTjB-42" value="info返回" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="n3twsitCoD2v3ThDSTjB-41">
@@ -415,14 +400,11 @@
             <mxPoint x="-18" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="n3twsitCoD2v3ThDSTjB-52" value="&lt;h1&gt;第2步&lt;/h1&gt;&lt;p&gt;从服务器获取git版本、object-hash算法、fetch方式等信息&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
-          <mxGeometry x="-100" y="350" width="190" height="90" as="geometry" />
-        </mxCell>
         <mxCell id="n3twsitCoD2v3ThDSTjB-53" value="&lt;h1&gt;第3步&lt;/h1&gt;&lt;p&gt;从服务器获取HEAD，refs文件夹下的信息（分支、tag）&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
           <mxGeometry x="-100" y="460" width="190" height="90" as="geometry" />
         </mxCell>
         <mxCell id="n3twsitCoD2v3ThDSTjB-54" value="&lt;h1&gt;第4步&lt;/h1&gt;&lt;p&gt;通过第3步获取到的所有hash，从服务器fetch到object压缩数据，并在客户端完成工作区的恢复&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
-          <mxGeometry x="-100" y="570" width="190" height="110" as="geometry" />
+          <mxGeometry x="-100" y="584.5" width="190" height="110" as="geometry" />
         </mxCell>
         <mxCell id="n3twsitCoD2v3ThDSTjB-55" value="" style="endArrow=classic;html=1;rounded=0;startSize=6;dashed=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -437,6 +419,27 @@
         </mxCell>
         <mxCell id="n3twsitCoD2v3ThDSTjB-57" value="fetch会从服务器端下载pack文件，pack文件包含了object对象的集合，并会在客户端通过git index-pack生成idx文件，通过读取HEAD对应的commit值，从commit中获取到tree对象的hash值，根据tree对象生成当前工作区的index文件，基于当前的index文件能checkout出整个工作区，并完成整个clone操作" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;strokeColor=#d6b656;fillColor=#fff2cc;align=left;" vertex="1" parent="1">
           <mxGeometry x="240" y="670" width="331" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="n3twsitCoD2v3ThDSTjB-58" value="&lt;h1&gt;第1步&lt;/h1&gt;&lt;p&gt;从服务器获取git版本、object-hash算法、fetch方式等信息&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="220" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n3twsitCoD2v3ThDSTjB-59" value="" style="endArrow=classic;html=1;rounded=0;startSize=6;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" target="n3twsitCoD2v3ThDSTjB-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="350" as="sourcePoint" />
+            <mxPoint x="320" y="410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="220" y="350" />
+              <mxPoint x="220" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n3twsitCoD2v3ThDSTjB-60" value="git init" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="n3twsitCoD2v3ThDSTjB-59">
+          <mxGeometry x="0.1517" y="-1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n3twsitCoD2v3ThDSTjB-61" value="通过第1步中返回的git仓库信息构建本地的git仓库（如object-format，为init的参数）" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;strokeColor=#d6b656;fillColor=#fff2cc;align=left;" vertex="1" parent="1">
+          <mxGeometry x="250" y="350" width="210" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
