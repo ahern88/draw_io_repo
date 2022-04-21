@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-21T19:20:45.867Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="G5we8mY4XelvpF0TYmkQ" version="17.2.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-04-21T19:44:39.574Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="8ug-cJxPp0RQqqgaSEer" version="17.2.1" type="github" pages="4">
   <diagram id="BOlWp9sL-bOUXCQCUqgY" name="架构不是什么">
     <mxGraphModel dx="946" dy="1815" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -107,6 +107,14 @@
         </mxCell>
         <mxCell id="4lFyT9oCYdfO70xvv3OJ-19" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=30;" edge="1" parent="1" source="4lFyT9oCYdfO70xvv3OJ-3" target="4lFyT9oCYdfO70xvv3OJ-4">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fz_3WmefXCOJ9eMIZyA3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontSize=16;strokeWidth=1;curved=1;" edge="1" parent="1" source="4lFyT9oCYdfO70xvv3OJ-3" target="4lFyT9oCYdfO70xvv3OJ-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="210" />
+              <mxPoint x="610" y="210" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="4lFyT9oCYdfO70xvv3OJ-3" value="X1&lt;br&gt;开放" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="330" y="270" width="100" height="80" as="geometry" />
@@ -262,7 +270,7 @@
         <mxCell id="xLH8_8Kh0HRCWi2Ym_WJ-11" value="&amp;nbsp; Z2: 框架" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;align=left;" vertex="1" parent="1">
           <mxGeometry x="490" y="140" width="210" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xLH8_8Kh0HRCWi2Ym_WJ-12" value="&amp;nbsp; Z1: 操作系统" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;align=left;" vertex="1" parent="1">
+        <mxCell id="xLH8_8Kh0HRCWi2Ym_WJ-12" value="&amp;nbsp; Z1: 执行系统（如JVM）" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;align=left;" vertex="1" parent="1">
           <mxGeometry x="490" y="220" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="xLH8_8Kh0HRCWi2Ym_WJ-13" value="SaaS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
