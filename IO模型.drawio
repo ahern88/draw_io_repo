@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-14T14:35:12.154Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="TnBxF40AodJ6gtB3_7qK" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-14T14:46:15.539Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="XXhTbKb1-2qyymgXU1II" version="18.0.2" type="github" pages="2">
   <diagram id="JXJEaAiWxdvnBBZrwQo4" name="文件IO操作">
     <mxGraphModel dx="914" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -61,6 +61,68 @@
             <mxPoint x="390" y="350" as="sourcePoint" />
             <mxPoint x="440" y="300" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="mmap" id="XwnV-Lo6zvTaa6uT9F2S">
+    <mxGraphModel dx="914" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="N2xxAsz_auTFktDQKYG_-0" />
+        <mxCell id="N2xxAsz_auTFktDQKYG_-1" parent="N2xxAsz_auTFktDQKYG_-0" />
+        <mxCell id="N2xxAsz_auTFktDQKYG_-2" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeColor=#8C8C8C;" edge="1" parent="N2xxAsz_auTFktDQKYG_-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="280" as="sourcePoint" />
+            <mxPoint x="720" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N2xxAsz_auTFktDQKYG_-3" value="内核空间" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="N2xxAsz_auTFktDQKYG_-1">
+          <mxGeometry x="650" y="290" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N2xxAsz_auTFktDQKYG_-4" value="用户空间" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="N2xxAsz_auTFktDQKYG_-1">
+          <mxGeometry x="650" y="240" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N2xxAsz_auTFktDQKYG_-14" value="文件" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.file_2;pointerEvents=1;" vertex="1" parent="N2xxAsz_auTFktDQKYG_-1">
+          <mxGeometry x="330" y="485" width="113" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="N2xxAsz_auTFktDQKYG_-15" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="N2xxAsz_auTFktDQKYG_-1" target="N2xxAsz_auTFktDQKYG_-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="386.5" y="400" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jTi8bt42CX3lUXnucIVx-0" value="内核Page cache" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="N2xxAsz_auTFktDQKYG_-1">
+          <mxGeometry x="261.5" y="340" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jTi8bt42CX3lUXnucIVx-1" value="虚拟内存地址" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="N2xxAsz_auTFktDQKYG_-1">
+          <mxGeometry x="261.5" y="150" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jTi8bt42CX3lUXnucIVx-3" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="N2xxAsz_auTFktDQKYG_-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="262.5" y="210" as="sourcePoint" />
+            <mxPoint x="262.5000000000002" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jTi8bt42CX3lUXnucIVx-4" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="N2xxAsz_auTFktDQKYG_-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510.5" y="210" as="sourcePoint" />
+            <mxPoint x="510.5000000000002" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jTi8bt42CX3lUXnucIVx-5" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;rotation=90;" vertex="1" parent="N2xxAsz_auTFktDQKYG_-1">
+          <mxGeometry x="376.5" width="20" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="jTi8bt42CX3lUXnucIVx-6" value="4096" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="N2xxAsz_auTFktDQKYG_-1">
+          <mxGeometry x="356.5" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jTi8bt42CX3lUXnucIVx-7" value="0X470C00" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="N2xxAsz_auTFktDQKYG_-1">
+          <mxGeometry x="190" y="140" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jTi8bt42CX3lUXnucIVx-8" value="0X471C00" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="N2xxAsz_auTFktDQKYG_-1">
+          <mxGeometry x="520" y="140" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jTi8bt42CX3lUXnucIVx-9" value="mmap内存映射文件，对用户态的数据修改直接反映为文件的修改，减少内存拷贝" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="N2xxAsz_auTFktDQKYG_-1">
+          <mxGeometry x="80" y="40" width="150" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
